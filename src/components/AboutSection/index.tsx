@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 
 // Components
 import Card from 'components/input/Card';
+import SectionTitle from 'components/input/SectionTitle';
 
 const cx = classNames.bind(styles);
 
@@ -32,11 +33,11 @@ const cards = [
 const About: React.FC = () => {
   return (
     <div className={cx('about')}>
-      <h2>Welcome To Website</h2>
+      <SectionTitle>Welcome To Website</SectionTitle>
       <div className={cx('cards')}>
         {
           cards.map(({title, description, icon, href}, cardIdx) => (
-            <Card 
+            <Card
               key={cardIdx}
               title={title}
               description={description}
