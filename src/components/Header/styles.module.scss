@@ -111,26 +111,6 @@ $detached-height: 50px;
     }
   }
 
-  &.detached {
-    @include header-white-theme;
-
-    .nav {
-      .nav-items {
-        ul {
-          li {
-            &.active a {
-              color: #6195ff;
-            }
-
-            a {
-              color: black;
-            }
-          }
-        }
-      }
-    }
-  }
-
   // Desktop
   @media (min-width: 768px) {
     .nav {
@@ -173,6 +153,26 @@ $detached-height: 50px;
               &:after {
                 width: 100%;
                 opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.detached {
+      @include header-white-theme;
+
+      .nav {
+        .nav-items {
+          ul {
+            li {
+              &.active a {
+                color: #6195ff;
+              }
+
+              a {
+                color: black;
               }
             }
           }
