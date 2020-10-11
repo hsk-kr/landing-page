@@ -152,18 +152,27 @@ $detached-height: 50px;
               text-decoration: none;
               color: white;
 
+              &:after {
+                @include after-underline;
+                width: 0%;
+                transition: 0.2s;
+                opacity: 0;
+              }
+
               &:hover {
                 cursor: pointer;
 
                 &:after {
-                  @include after-underline;
+                  width: 100%;
+                  opacity: 1;
                 }
               }
             }
 
             &.active a {
               &:after {
-                @include after-underline;
+                width: 100%;
+                opacity: 1;
               }
             }
           }
