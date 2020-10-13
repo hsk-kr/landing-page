@@ -12,7 +12,7 @@ import ImageSlide from 'components/input/ImageSlide';
 // Resources
 import SlideImg1 from 'resources/ServicesSection/slide1.jpg';
 import SlideImg2 from 'resources/ServicesSection/slide2.jpg';
-import SlideImg3 from 'resources/ServicesSection/slide1.jpg';
+import SlideImg3 from 'resources/ServicesSection/slide3.jpg';
 
 const cx = classNames.bind(styles);
 
