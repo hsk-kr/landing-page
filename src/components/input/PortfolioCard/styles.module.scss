@@ -52,15 +52,7 @@
       display: flex;
 
       .btn {
-        display: block;
-        background-color: #6195ff;
-        padding: 10px;
         margin: 3px;
-
-        &:hover {
-          cursor: pointer;
-          opacity: 0.9;
-        }
       }
     }
   }
