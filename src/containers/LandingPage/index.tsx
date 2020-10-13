@@ -6,6 +6,7 @@ import styles from './styles.module.scss';
 import Header from 'components/Header';
 import Home from 'components/HomeSection';
 import About from 'components/AboutSection';
+import Portfolio from 'components/PortfolioSection';
 
 const cx = className.bind(styles);
 
@@ -15,6 +16,7 @@ const LandingPage: React.FC = () => {
       <Header />
       <Home />
       <About />
+      <Portfolio />
     </div>
   );
 };
