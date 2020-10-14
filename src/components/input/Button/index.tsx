@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 interface Props {
   className?: string;
-  type?: 'default' | 'primary';
+  type?: 'default' | 'primary' | 'primary-inverse';
   children?: React.ReactNode | string;
 }
 
@@ -19,6 +19,9 @@ const Button: React.FC<Props> = ({ className, children, type = 'default' }) => {
   } else if (type === 'primary') {
     btnStyle.backgroundColor = '#6195FF';
     btnStyle.color = '#ffffff';
+  } else if (type === 'primary-inverse') {
+    btnStyle.color = '#6195FF';
+    btnStyle.border = '1px solid #6195FF';
   }
 
   return (

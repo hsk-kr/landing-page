@@ -8,6 +8,7 @@ import Home from 'components/HomeSection';
 import About from 'components/AboutSection';
 import Portfolio from 'components/PortfolioSection';
 import Services from 'components/ServicesSection';
+import Prices from 'components/PricesSection';
 
 const cx = className.bind(styles);
 
@@ -19,6 +20,7 @@ const LandingPage: React.FC = () => {
       <About />
       <Portfolio />
       <Services />
+      <Prices />
     </div>
   );
 };
