@@ -1,6 +1,4 @@
 import React from 'react';
-import className from 'classnames/bind';
-import styles from './styles.module.scss';
 
 // Components
 import Header from 'components/Header';
@@ -9,8 +7,10 @@ import About from 'components/AboutSection';
 import Portfolio from 'components/PortfolioSection';
 import Services from 'components/ServicesSection';
 import Prices from 'components/PricesSection';
+import TransparentSection from 'components/TransparentSection';
 
-const cx = className.bind(styles);
+// Resources
+import Bg1 from 'resources/TransparentSection/bg1.jpg';
 
 const LandingPage: React.FC = () => {
   return (
@@ -21,6 +21,7 @@ const LandingPage: React.FC = () => {
       <Portfolio />
       <Services />
       <Prices />
+      <TransparentSection bgImg={Bg1} />
     </div>
   );
 };
