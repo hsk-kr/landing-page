@@ -40,6 +40,7 @@
     top: 0;
     height: 0px;
     background-color: rgba(0, 0, 0, 0.85);
+    transition: 0.2s height;
   }
 
   .overlay {
@@ -51,6 +52,7 @@
     right: 20px;
     opacity: 0;
     z-index: 1;
+    transition: 0.2s opacity;
 
     .social-icon {
       display: flex;
