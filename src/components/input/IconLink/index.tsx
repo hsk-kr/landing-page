@@ -11,12 +11,17 @@ interface Props {
 
 const cx = classNames.bind(styles);
 
-const IconLink:React.FC<Props> = ({ className, icon, href }) => {
+const IconLink: React.FC<Props> = ({ className, icon, href }) => {
   return (
-    <a className={cx('btn', className)} href={href}>
-      <FontAwesomeIcon color='white' icon={icon} />
+    <a
+      className={cx('btn', className)}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon color="white" icon={icon} />
     </a>
-  )
+  );
 };
 
 export default IconLink;

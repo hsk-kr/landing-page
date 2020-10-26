@@ -1,6 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAdjust, faBahai, faBold, faCog, faCrow, faGlassMartini, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAdjust,
+  faBahai,
+  faBold,
+  faCog,
+  faCrow,
+  faGlassMartini,
+  faCheckCircle,
+} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
@@ -21,50 +29,60 @@ const slideImgs: string[] = [SlideImg1, SlideImg2, SlideImg3];
 const cards = [
   {
     title: 'Creative',
-    description: 'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
+    description:
+      'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
     icon: faAdjust,
-    href: '#'
+    href: '#',
   },
   {
     title: 'Unique',
-    description: 'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
+    description:
+      'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
     icon: faBahai,
-    href: '#'
+    href: '#',
   },
   {
     title: 'Design',
-    description: 'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
+    description:
+      'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
     icon: faBold,
-    href: '#'
+    href: '#',
   },
   {
     title: 'Support',
-    description: 'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
+    description:
+      'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
     icon: faCog,
-    href: '#'
+    href: '#',
   },
   {
     title: 'Modern',
-    description: 'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
+    description:
+      'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
     icon: faCrow,
-    href: '#'
+    href: '#',
   },
   {
     title: 'Needs',
-    description: 'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
+    description:
+      'A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.',
     icon: faGlassMartini,
-    href: '#'
-  }
+    href: '#',
+  },
 ];
 
-const CheckLabel = ({ children='' }) => {
+const CheckLabel = ({ children = '' }) => {
   return (
     <div className={cx('check-label')}>
-      <FontAwesomeIcon className={cx('check-ico')} icon={faCheckCircle} color='#6195ff' />
+      <FontAwesomeIcon
+        className={cx('check-ico')}
+        icon={faCheckCircle}
+        color="#6195ff"
+      />
       {children}
     </div>
-  )
-}
+  );
+};
 
 const Services: React.FC = () => {
   return (
@@ -72,17 +90,15 @@ const Services: React.FC = () => {
       <div className={cx('what-we-offer')}>
         <SectionTitle>What We Offer</SectionTitle>
         <div className={cx('cards')}>
-          {
-            cards.map(({title, description, icon, href}, cardIdx) => (
-              <Card
-                key={cardIdx}
-                title={title}
-                description={description}
-                icon={icon}
-                href={href}
-              />
-            ))
-          }
+          {cards.map(({ title, description, icon, href }, cardIdx) => (
+            <Card
+              key={cardIdx}
+              title={title}
+              description={description}
+              icon={icon}
+              href={href}
+            />
+          ))}
         </div>
       </div>
       <div className={cx('why-choose-us')}>
@@ -90,7 +106,11 @@ const Services: React.FC = () => {
           <div className={cx('text')}>
             <SectionTitle className={cx('title')}>Why Choose Us</SectionTitle>
             <p>
-            A company can be created as a legal person so that the company itself has limited liability as members perform or fail to discharge their duty according to the publicly declared incorporation, or published policy. When a company closes, it may need to be liquidated to avoid further legal obligations.
+              A company can be created as a legal person so that the company
+              itself has limited liability as members perform or fail to
+              discharge their duty according to the publicly declared
+              incorporation, or published policy. When a company closes, it may
+              need to be liquidated to avoid further legal obligations.
             </p>
             <CheckLabel>Have a Quality Product</CheckLabel>
             <CheckLabel>Know Your Industry and Competitors</CheckLabel>

@@ -1,10 +1,14 @@
 import React from 'react';
-import { faFaceb } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebookF,
+  faGooglePlusG,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './styles.module.scss';
 
 // Components
-import IconLink from 'components/Input/IconLink';
+import IconLink from 'components/input/IconLink';
 
 interface Props {
   name: string;
@@ -23,18 +27,32 @@ const TeamCard: React.FC<Props> = ({
   img,
   facebookLink,
   googleLink,
-  twitterLink
+  twitterLink,
 }) => {
   return (
     <div className={cx('team-card')}>
-      <img src={img} alt='person' />
+      <img src={img} alt="person" />
       <h3>{name}</h3>
       <span>{position}</span>
       <div className={cx('overlay')}>
-
+        <IconLink
+          className={cx('social-icon')}
+          icon={faFacebookF}
+          href={facebookLink}
+        />
+        <IconLink
+          className={cx('social-icon')}
+          icon={faGooglePlusG}
+          href={googleLink}
+        />
+        <IconLink
+          className={cx('social-icon')}
+          icon={faTwitter}
+          href={twitterLink}
+        />
       </div>
     </div>
-  )
+  );
 };
 
 export default TeamCard;

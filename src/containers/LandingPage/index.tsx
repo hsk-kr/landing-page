@@ -8,6 +8,7 @@ import Portfolio from 'components/PortfolioSection';
 import Services from 'components/ServicesSection';
 import Prices from 'components/PricesSection';
 import TransparentSection from 'components/TransparentSection';
+import Team from 'components/TeamSection';
 
 // Resources
 import Bg1 from 'resources/TransparentSection/bg1.jpg';
@@ -22,6 +23,7 @@ const LandingPage: React.FC = () => {
       <Services />
       <Prices />
       <TransparentSection bgImg={Bg1} />
+      <Team />
     </div>
   );
 };
