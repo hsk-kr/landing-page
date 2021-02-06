@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.506ad777.chunk.css",
+    "main.js": "/landing-page/static/js/main.20b197a2.chunk.js",
+    "main.js.map": "/landing-page/static/js/main.20b197a2.chunk.js.map",
+    "runtime-main.js": "/landing-page/static/js/runtime-main.8c4e35fe.js",
+    "runtime-main.js.map": "/landing-page/static/js/runtime-main.8c4e35fe.js.map",
+    "static/js/2.c1a3c3fb.chunk.js": "/landing-page/static/js/2.c1a3c3fb.chunk.js",
+    "static/js/2.c1a3c3fb.chunk.js.map": "/landing-page/static/js/2.c1a3c3fb.chunk.js.map",
+    "index.html": "/landing-page/index.html",
+    "precache-manifest.318cd31ab9eeee0ff6a086384ab84445.js": "/landing-page/precache-manifest.318cd31ab9eeee0ff6a086384ab84445.js",
+    "service-worker.js": "/landing-page/service-worker.js",
+    "static/css/main.506ad777.chunk.css.map": "/landing-page/static/css/main.506ad777.chunk.css.map",
+    "static/js/2.c1a3c3fb.chunk.js.LICENSE.txt": "/landing-page/static/js/2.c1a3c3fb.chunk.js.LICENSE.txt",
+    "static/media/bg.jpg": "/landing-page/static/media/bg.5989451b.jpg",
+    "static/media/bg1.jpg": "/landing-page/static/media/bg1.966bbfda.jpg",
+    "static/media/card1.jpg": "/landing-page/static/media/card1.90dae020.jpg",
+    "static/media/card2.jpg": "/landing-page/static/media/card2.1eda7ac5.jpg",
+    "static/media/card3.jpg": "/landing-page/static/media/card3.7e9ce07b.jpg",
+    "static/media/card4.jpg": "/landing-page/static/media/card4.95b2a225.jpg",
+    "static/media/card5.jpg": "/landing-page/static/media/card5.d1b8ba43.jpg",
+    "static/media/card6.jpg": "/landing-page/static/media/card6.75a8d533.jpg",
+    "static/media/slide1.jpg": "/landing-page/static/media/slide1.96c7bec1.jpg",
+    "static/media/slide2.jpg": "/landing-page/static/media/slide2.a91fb1bb.jpg",
+    "static/media/slide3.jpg": "/landing-page/static/media/slide3.5ed576f0.jpg",
+    "static/media/team_1.jpg": "/landing-page/static/media/team_1.3b5d8543.jpg",
+    "static/media/team_2.jpg": "/landing-page/static/media/team_2.326a2012.jpg",
+    "static/media/team_3.jpg": "/landing-page/static/media/team_3.ad2fdeeb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c4e35fe.js",
+    "static/js/2.c1a3c3fb.chunk.js",
+    "static/css/main.506ad777.chunk.css",
+    "static/js/main.20b197a2.chunk.js"
+  ]
+}
