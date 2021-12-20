@@ -7,7 +7,6 @@ import Button from '../components/input/Button';
 export default {
   title: 'Components/Input/Button',
   component: Button,
-  decorators: [(Story: any) => <div style={{ width: 200 }}>{Story()}</div>],
   parameters: {
     docs: {
       description: {
@@ -19,9 +18,21 @@ export default {
     children: 'Label',
     onClick: undefined,
   },
+  argTypes: {
+    width: {
+      type: 'number',
+      defaultValue: 200,
+      description:
+        'A width of parent element. this property is used for resizing the element.',
+    },
+  },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = ({ width, ...args }: any) => (
+  <div style={{ width }}>
+    <Button {...args} />
+  </div>
+);
 
 export const Default = Template.bind({});
 Default.args = {
